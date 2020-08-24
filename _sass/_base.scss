@@ -155,7 +155,8 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    // background-image: url('../img/header.jpg');
+    background-color: #960B23;
     text-align: center;
     color: white;
     .header-content {
@@ -166,7 +167,7 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
+                // text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -300,7 +301,7 @@ header {
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant(white, $theme-dark, $theme-dark);
 }
 
 .btn {
