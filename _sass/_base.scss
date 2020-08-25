@@ -34,6 +34,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    font-weight: bold;
 }
 
 p {
@@ -49,6 +50,11 @@ p {
 .bg-dark {
     background-color: $theme-dark;
     color: white;
+}
+
+.bg-light {
+    background-color: $theme-white;
+    color: black;
 }
 
 .text-faded {
@@ -78,7 +84,7 @@ aside {
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -130,7 +136,7 @@ aside {
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
+                font-size: 18px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
@@ -156,7 +162,7 @@ header {
     @include background-cover;
     background-position: center;
     // background-image: url('../img/header.jpg');
-    background-color: #960B23;
+    background-color: $theme-red;
     text-align: center;
     color: white;
     .header-content {
@@ -209,6 +215,7 @@ header {
 // Sections
 
 .section-heading {
+    font-weight: bold;
     margin-top: 0;
 }
 
@@ -288,6 +295,10 @@ header {
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
+}
+
+.text-red {
+    color: $theme-red;
 }
 
 .no-gutter > [class*='col-'] {
