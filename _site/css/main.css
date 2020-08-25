@@ -84,9 +84,9 @@ header .header-content .header-content-inner p { font-weight: 300; color: rgba(2
 
 .no-gutter > [class*='col-'] { padding-right: 0; padding-left: 0; }
 
-.btn-default { color: #222; background-color: white; border-color: white; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
+.btn-default { color: #871C2C; background-color: white; border-color: white; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
 
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default { color: #222; background-color: #f2f2f2; border-color: #ededed; }
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default { color: #871C2C; background-color: white; border-color: #000000; }
 
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default { background-image: none; }
 
