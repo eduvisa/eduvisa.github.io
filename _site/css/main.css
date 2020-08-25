@@ -20,7 +20,9 @@ p { font-size: 16px; line-height: 1.5; margin-bottom: 20px; }
 
 .bg-light { background-color: #FFFFFF; color: black; }
 
-.text-faded { color: rgba(255, 255, 255, 0.7); }
+.text-faded { color: rgba(255, 255, 255, 0.8); }
+
+.text-muted { color: rgba(0, 0, 0, 0.7); }
 
 section { padding: 100px 0; }
 
