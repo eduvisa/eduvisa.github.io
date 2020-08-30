@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
+title: EduVisa Home
+email: team@myeduvisa.org
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+instagram_username: myeduvisa
+twitter_username: myeduvisa
+facebook_username: teameduvisa
 
 # Build settings
 markdown: kramdown
