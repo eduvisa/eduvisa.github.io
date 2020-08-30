@@ -38,9 +38,15 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
     margin-bottom: 20px;
+    // font-weight: 600;
+}
+
+.bg-red {
+    color: white;
+    background-color: $theme-red;
 }
 
 .bg-primary {
@@ -58,11 +64,11 @@ p {
 }
 
 .text-faded {
-    color: rgba(white, .8);
+    color: rgba(white, .9);
 }
 
 .text-muted {
-    color: rgba(black, .7);
+    color: rgba(black, .8);
 }
 
 section {
@@ -165,7 +171,6 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    // background-image: url('../img/header.jpg');
     background-color: $theme-red;
     text-align: center;
     color: white;
@@ -193,7 +198,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height: 90%;
         .header-content {
             position: absolute;
             top: 50%;
