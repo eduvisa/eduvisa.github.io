@@ -38,7 +38,7 @@ h6 {
 }
 
 p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
     // font-weight: 600;
@@ -51,6 +51,11 @@ p {
 
 .bg-primary {
     background-color: $theme-primary;
+}
+
+.bg-gray {
+    background-color: $theme-gray;
+    color: black;
 }
 
 .bg-dark {
@@ -226,6 +231,7 @@ header {
 .section-heading {
     font-weight: bold;
     margin-top: 0;
+    // text-transform: uppercase;
 }
 
 .service-box {
@@ -324,10 +330,14 @@ header {
     @include button-variant(white, $theme-dark, $theme-dark);
 }
 
+.btn-red {
+    @include button-variant(white, $theme-red, $theme-red);
+}
+
 .btn {
     @include sans-serif-font;
     border: none;
-    border-radius: 300px;
+    border-radius: 8px;
     font-weight: 700;
     text-transform: uppercase;
 }
