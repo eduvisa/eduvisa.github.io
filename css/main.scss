@@ -42,6 +42,8 @@ $theme-white: #FFFFFF;
 $theme-yellow: #EDB200;
 $theme-black: #000000;
 
+$animate: all 0.2s ease-in-out;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",

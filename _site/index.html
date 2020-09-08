@@ -38,8 +38,8 @@
 
 
 <body id="page-top">
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+  <nav id="mainNav" class="navbar-default">
+    <div class="container-fluid navbar-internal">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -49,20 +49,20 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- <a class="navbar-brand page-scroll" href="#page-top">EduVisa</a> -->
-            <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/logo_wide.png" height=50px></a>
+            <a class="navbar-brand page-scroll" href="/"><img src="/img/logo_wide.png" height=80px style="border-radius: 8px;"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#who-we-are">Who We Are</a>
+                    <a class="page-scroll" href="/#who-we-are">Who We Are</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#what-we-do">What We Do</a>
+                    <a class="page-scroll" href="/#what-we-do">What We Do</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#get-involved">Get Involved</a>
+                    <a class="page-scroll" href="/get-involved">Get Involved</a>
                 </li>
             </ul>
         </div>
@@ -73,21 +73,25 @@
 
   
   <!-- Header -->
-  <header>
-    <div class="header-content">
-        <div class="header-content-inner">
-            <!-- <img src="/img/logo.png">   -->
-            <img src="/img/logo_wide.png">         
-            <!-- <br> -->
-            <!-- <br> -->
-            <!-- <h1>EduVisa</h1> -->
-            <h2 style="margin:0;">The Passport to Your Future!</h2>
-            <br>
-            <br>
-            <a href="https://discord.gg/ZnMKDKQ" target="_blank" class="btn btn-primary btn-xl page-scroll"><i class="fab fa-discord fa-fw"></i>&nbsp Join Our Discord!</a>
-        </div>
-    </div>
-  </header>
+    <header>
+        <section class="bg-light" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="wrapper">
+                        <div class="wrapper-image right">
+                            <img src="/img/pen-paper.jpg"/>
+                        </div>
+                        <div class="wrapper-text header-content">             
+                            <h1 class="section-heading">Welcome to the<br>EduVisa Community!</h1><br>
+                            <p class="text-muted">We're a global community of students, by students, for students, in a time when we're as disconnected as ever. </p>
+                            <a href="https://discord.gg/ZnMKDKQ" target="_blank" class="btn btn-primary btn-xl page-scroll"><i class="fab fa-discord fa-fw"></i>&nbsp Join Us On Discord!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </header>
+        
 
   <!-- Who We Are -->
   <section class="bg-gray" id="who-we-are">
@@ -95,7 +99,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Who We Are</h2>
-                <hr class="light">
+                <hr class="dark">
                 <p class="text-muted">EduVisa is a global, student-run non-profit that aims to help students in their college and high school journey by providing a fun, interactive community of highschool and college students to help them make the most out of their high school and college experience and achieve new heights both in and out of the classroom.</p>
             </div>
         </div>
@@ -145,7 +149,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Get Involved!</h2>
-                <hr class="light">
+                <hr class="dark">
                 <p class="text-muted">We are always looking for high school and college students to help us advance our cause. Whether you  are good at art, like to post on social media, have great scores on tests and in school, want to share your college application journey with others, or like writing articles, there's always a position for you on our team!</p>
                 <a href="/get-involved" class="btn btn-red btn-xl">Learn More!</a>
             </div>
@@ -153,7 +157,55 @@
     </div>
   </section>
 
-  <!-- jQuery -->
+
+  
+  <style>
+    .right {
+    float: right !important;
+    }
+    .wrapper {
+    position: relative;
+    width: 100%;
+    }
+    .wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+    }
+    .wrapper-text {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+    background-color: transparent;
+    }
+    .wrapper-image {
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    }
+    .wrapper-image img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    }
+    .object-fit-compatible .wrapper-image img {
+    object-fit: cover;
+    }
+    .background-size-compatible .wrapper-image img {
+    width: 0;
+    height: 0;
+    padding: 50% 25%;
+    background-position: 50% 50%;
+    background-size: cover;
+    }
+</style>
+
+
+<!-- jQuery -->
 <script src="/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -166,6 +218,22 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="/js/creative.js"></script>
+
+
+<script> 
+    // check if browser understand object-fit style - affect css styles
+    if (window.getComputedStyle(document.body).objectFit !== undefined) {
+        $("body").addClass("object-fit-compatible");
+    // check if browser understand background-size style - affect css styles
+    } else if (window.getComputedStyle(document.body).backgroundSize !== undefined) {
+        $("body").addClass("background-size-compatible");
+        $('img').each(function() {
+            $(this).css({
+                'background-image': 'url(\'' + $(this).attr('src') + '\')'
+            });
+        });
+    }
+</script>
 
 
 </body>
