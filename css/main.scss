@@ -35,11 +35,14 @@
 
 // variables.less
 $theme-primary: #871C2C;
+$theme-gray: #F5F5F5;
 $theme-dark: #23272A;
 $theme-red: #960B23;
 $theme-white: #FFFFFF;
 $theme-yellow: #EDB200;
 $theme-black: #000000;
+
+$animate: all 0.2s ease-in-out;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

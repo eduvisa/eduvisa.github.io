@@ -38,13 +38,24 @@ h6 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
+    // font-weight: 600;
+}
+
+.bg-red {
+    color: white;
+    background-color: $theme-red;
 }
 
 .bg-primary {
     background-color: $theme-primary;
+}
+
+.bg-gray {
+    background-color: $theme-gray;
+    color: black;
 }
 
 .bg-dark {
@@ -58,15 +69,15 @@ p {
 }
 
 .text-faded {
-    color: rgba(white, .8);
+    color: rgba(white, .9);
 }
 
 .text-muted {
-    color: rgba(black, .7);
+    color: rgba(black, .8);
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 100px;
 }
 
 aside {
@@ -80,8 +91,10 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: $theme-primary;
+    border-bottom: 1px solid darken($theme-red, 6%);
+    // border-color: rgba($theme-dark, .5);
+
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -93,6 +106,8 @@ aside {
         &:focus {
             color: darken($theme-primary, 10%);
         }
+        // width: 500px;
+        // width: 80%;
     }
     .nav {
         > li {
@@ -100,8 +115,8 @@ aside {
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
-                font-size: 13px;
-                color: $theme-dark;
+                font-size: 16px;
+                color: white;
                 &:hover {
                     color: $theme-primary;
                 }
@@ -119,41 +134,32 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
-        border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
+            // width: 20%;
             &:hover,
             &:focus {
                 color: white;
             }
         }
+        // padding: 0% 8%;
+        // width: 800px;
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            // color: rgba(black, 0.75);
+            color: white;
             &:hover {
-                color: white;
-            }
-        }
-        &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
-            .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 18px;
-                &:hover,
-                &:focus {
-                    color: darken($theme-primary, 10%);
-                }
             }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
+            padding: 40px 0px 40px 30px;
         }
+    }
+}
+
+.navbar-internal {
+    width: 100%;
+    @media (min-width: 1368px) {
+        width: 1368px; 
     }
 }
 
@@ -161,59 +167,72 @@ aside {
 
 header {
     position: relative;
-    width: 100%;
+    width:100%;
     min-height: auto;
-    @include background-cover;
-    background-position: center;
-    // background-image: url('../img/header.jpg');
-    background-color: $theme-red;
-    text-align: center;
+    // @include background-cover;
+    // background-color: $theme-red;
+    background-color: white;
+    text-align: left;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
     .header-content {
         position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
-        width: 100%;
-        .header-content-inner {
-            h1 {
-                font-weight: 700;
-                // text-transform: uppercase;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 300;
-                color: rgba(white, .7);
-                font-size: 16px;
-                margin-bottom: 50px;
-            }
-        }
+        // text-align: right;
+    //     padding: 100px 15px 100px;
+        // width: 100%;
+    //     .header-content-inner {
+    //         h1 {
+    //             font-weight: 700;
+    //             // text-transform: uppercase;
+    //             margin-top: 0;
+    //             margin-bottom: 0;
+    //         }
+    //         hr {
+    //             margin: 30px auto;
+    //         }
+    //         p {
+    //             font-weight: 300;
+    //             color: rgba(white, .7);
+    //             font-size: 16px;
+    //             margin-bottom: 50px;
+    //         }
+    //     }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height: 70%;
         .header-content {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
-            .header-content-inner {
+            position: relative;
+            // top: 50%;
+            // -webkit-transform: translateY(-50%);
+            // -ms-transform: translateY(-50%);
+            // transform: translateY(-50%);
+            padding: 10% 0px;
+            // .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                h1 {
+                    font-size: 50px;
+                    padding: 0px;
+                    margin: 0px;
+                }
                 p {
-                    font-size: 18px;
-                    max-width: 80%;
+                    font-size: 22px;
+                    // max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
                 }
-            }
+            // }
         }
     }
+}
+
+.page-heading {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 120px;
+    // text-transform: uppercase;
 }
 
 // Sections
@@ -221,6 +240,7 @@ header {
 .section-heading {
     font-weight: bold;
     margin-top: 0;
+    // text-transform: uppercase;
 }
 
 .service-box {
@@ -319,10 +339,14 @@ header {
     @include button-variant(white, $theme-dark, $theme-dark);
 }
 
+.btn-red {
+    @include button-variant(white, $theme-red, $theme-red);
+}
+
 .btn {
     @include sans-serif-font;
     border: none;
-    border-radius: 300px;
+    border-radius: 8px;
     font-weight: 700;
     text-transform: uppercase;
 }
