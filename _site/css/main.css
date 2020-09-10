@@ -28,13 +28,13 @@ p { font-size: 18px; line-height: 1.5; margin-bottom: 20px; }
 
 .text-muted { color: rgba(0, 0, 0, 0.8); }
 
-section { padding: 100px 0; }
+section { padding: 70px 100px; }
 
 aside { padding: 50px 0; }
 
 .no-padding { padding: 0; }
 
-.navbar-default { background-color: #960B23; border-width: 0px 0px 1px 0px; border-color: rgba(35, 39, 42, 0.5); font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
+.navbar-default { background-color: #871C2C; border-bottom: 1px solid #79091c; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; transition: all 0.35s; }
 
 .navbar-default .navbar-header .navbar-brand { color: #871C2C; font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; }
 
@@ -48,7 +48,7 @@ aside { padding: 50px 0; }
 
 .navbar-default .nav > li.active > a:hover, .navbar-default .nav > li.active > a:focus:hover { background-color: transparent; }
 
-@media (min-width: 768px) { .navbar-default { background-color: #960B23; border-color: blue; border-width: 0px 0px 1px 0px; } .navbar-default .navbar-header .navbar-brand { color: rgba(255, 255, 255, 0.7); } .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus { color: white; } .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus { color: white; padding: 40px 0px 40px 30px; } .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover { color: #871C2C; } }
+@media (min-width: 768px) { .navbar-default .navbar-header .navbar-brand { color: rgba(255, 255, 255, 0.7); } .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus { color: white; } .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus { color: white; padding: 40px 0px 40px 30px; } .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover { color: #871C2C; } }
 
 .navbar-internal { width: 100%; }
 
@@ -58,7 +58,7 @@ header { position: relative; width: 80%; min-height: auto; background-color: whi
 
 header .header-content { position: relative; }
 
-@media (min-width: 768px) { header .header-content { position: relative; padding: 0 50px; max-width: 1000px; margin-left: auto; margin-right: auto; } header .header-content h1 { font-size: 50px; padding: 0px; margin: 0px; } header .header-content p { font-size: 22px; margin-left: auto; margin-right: auto; } }
+@media (min-width: 768px) { header { min-height: 75%; } header .header-content { position: relative; padding: 10% 50px; max-width: 1000px; margin-left: auto; margin-right: auto; } header .header-content h1 { font-size: 50px; padding: 0px; margin: 0px; } header .header-content p { font-size: 22px; margin-left: auto; margin-right: auto; } }
 
 .page-heading { font-weight: bold; margin-top: 0; font-size: 120px; }
 

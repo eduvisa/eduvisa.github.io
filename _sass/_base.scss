@@ -77,7 +77,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 100px;
 }
 
 aside {
@@ -91,9 +91,9 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: $theme-red;
-    border-width: 0px 0px 1px 0px;
-    border-color: rgba($theme-dark, .5);
+    background-color: $theme-primary;
+    border-bottom: 1px solid darken($theme-red, 6%);
+    // border-color: rgba($theme-dark, .5);
 
     @include sans-serif-font;
     @include transition-all;
@@ -134,10 +134,6 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: $theme-red;
-        // border-color: rgba(black, .3);
-        border-color: blue;
-        border-width: 0px 0px 1px 0px;
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             // width: 20%;
@@ -204,14 +200,14 @@ header {
     //     }
     }
     @media (min-width: 768px) {
-        // min-height: 90%;
+        min-height: 75%;
         .header-content {
             position: relative;
             // top: 50%;
             // -webkit-transform: translateY(-50%);
             // -ms-transform: translateY(-50%);
             // transform: translateY(-50%);
-            padding: 0 50px;
+            padding: 10% 50px;
             // .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
