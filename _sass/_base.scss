@@ -167,7 +167,7 @@ aside {
 
 header {
     position: relative;
-    width:80%;
+    width:100%;
     min-height: auto;
     // @include background-cover;
     // background-color: $theme-red;
@@ -200,14 +200,14 @@ header {
     //     }
     }
     @media (min-width: 768px) {
-        min-height: 75%;
+        min-height: 70%;
         .header-content {
             position: relative;
             // top: 50%;
             // -webkit-transform: translateY(-50%);
             // -ms-transform: translateY(-50%);
             // transform: translateY(-50%);
-            padding: 10% 50px;
+            padding: 10% 0px;
             // .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;

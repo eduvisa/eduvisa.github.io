@@ -54,11 +54,11 @@ aside { padding: 50px 0; }
 
 @media (min-width: 1368px) { .navbar-internal { width: 1368px; } }
 
-header { position: relative; width: 80%; min-height: auto; background-color: white; text-align: left; color: white; margin-left: auto; margin-right: auto; }
+header { position: relative; width: 100%; min-height: auto; background-color: white; text-align: left; color: white; margin-left: auto; margin-right: auto; }
 
 header .header-content { position: relative; }
 
-@media (min-width: 768px) { header { min-height: 75%; } header .header-content { position: relative; padding: 10% 50px; max-width: 1000px; margin-left: auto; margin-right: auto; } header .header-content h1 { font-size: 50px; padding: 0px; margin: 0px; } header .header-content p { font-size: 22px; margin-left: auto; margin-right: auto; } }
+@media (min-width: 768px) { header { min-height: 70%; } header .header-content { position: relative; padding: 10% 0px; max-width: 1000px; margin-left: auto; margin-right: auto; } header .header-content h1 { font-size: 50px; padding: 0px; margin: 0px; } header .header-content p { font-size: 22px; margin-left: auto; margin-right: auto; } }
 
 .page-heading { font-weight: bold; margin-top: 0; font-size: 120px; }
 
