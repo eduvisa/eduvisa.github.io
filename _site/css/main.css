@@ -130,6 +130,8 @@ header .header-content { position: relative; }
 
 #contact .fa { color: #23272A; font-size: 4em; }
 
+#footer-links li { margin-bottom: 8px; }
+
 ::-moz-selection { color: white; text-shadow: none; background: #23272A; }
 
 ::selection { color: white; text-shadow: none; background: #23272A; }
