@@ -359,6 +359,10 @@ header {
     p {
         margin-bottom: 0;
     }
+    height: 370px;
+    @media (min-width: 768px) and (max-width: 992px) {
+        height: 480px;
+    }
 }
 
 .call-to-action {
