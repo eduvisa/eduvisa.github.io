@@ -132,6 +132,8 @@ header .header-content { position: relative; }
 
 #footer-links li { margin-bottom: 8px; }
 
+#community-programs li { margin-bottom: 8px; }
+
 ::-moz-selection { color: white; text-shadow: none; background: #23272A; }
 
 ::selection { color: white; text-shadow: none; background: #23272A; }
@@ -141,5 +143,13 @@ img::selection { color: white; background: transparent; }
 img::-moz-selection { color: white; background: transparent; }
 
 body { -webkit-tap-highlight-color: #23272A; }
+
+.socials { margin: 0 16px 0 0; color: #f8f8f8; }
+
+.socials:hover, .socials:focus, a.bg-dark:hover, a.bg-dark:focus { color: #d8c9cc; }
+
+#lower-footer { font-size: small; }
+
+#community-programs { margin: 10px 0 0 0; }
 
 /*# sourceMappingURL=main.css.map */

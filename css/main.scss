@@ -49,3 +49,14 @@ $animate: all 0.2s ease-in-out;
         "mixins",
         "base"
 ;
+
+.socials { margin: 0 16px 0 0; color: #f8f8f8; }
+
+.socials:hover, .socials:focus, a.bg-dark:hover, a.bg-dark:focus { color: #d8c9cc;}
+
+// #socials-list { margin: 10px 0 0 0; }
+
+#lower-footer { font-size: small; }
+
+#community-programs {margin: 10px 0 0 0;}
+
