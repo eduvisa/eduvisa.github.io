@@ -88,6 +88,14 @@ header .header-content { position: relative; }
 
 .call-to-action h2 { margin: 0 auto 20px; }
 
+#footer { background-color: #871C2C; }
+
+.footer-item { color: #FFFFFF; }
+
+.footer-item:hover { color: #F5F5F5; }
+
+#footer-links li, #community-programs li { margin-bottom: 8px; }
+
 .text-primary { color: #871C2C; }
 
 .text-red { color: #960B23; }
@@ -129,10 +137,6 @@ header .header-content { position: relative; }
 .btn-xl { padding: 15px 30px; }
 
 #contact .fa { color: #23272A; font-size: 4em; }
-
-#footer-links li { margin-bottom: 8px; }
-
-#community-programs li { margin-bottom: 8px; }
 
 ::-moz-selection { color: white; text-shadow: none; background: #23272A; }
 
