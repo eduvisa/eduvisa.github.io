@@ -373,6 +373,25 @@ header {
     }
 }
 
+//Footer
+#footer {
+    background-color: $theme-primary;
+}
+
+.footer-item {
+    color: $theme-white;
+}
+
+.footer-item:hover {
+    color: $theme-gray;
+}
+
+
+#footer-links li,
+#community-programs li {
+    margin-bottom: 8px;
+}
+
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
@@ -417,6 +436,8 @@ header {
     color: $theme-dark;
     font-size: 4em;
 }
+
+
 
 // Extras
 // -- Highlight Color Customization

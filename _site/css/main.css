@@ -110,6 +110,14 @@ header .header-content { position: relative; }
 
 .call-to-action h2 { margin: 0 auto 20px; }
 
+#footer { background-color: #871C2C; }
+
+.footer-item { color: #FFFFFF; }
+
+.footer-item:hover { color: #F5F5F5; }
+
+#footer-links li, #community-programs li { margin-bottom: 8px; }
+
 .text-primary { color: #871C2C; }
 
 .text-red { color: #960B23; }
@@ -161,5 +169,13 @@ img::selection { color: white; background: transparent; }
 img::-moz-selection { color: white; background: transparent; }
 
 body { -webkit-tap-highlight-color: #23272A; }
+
+.socials { margin: 0 16px 0 0; color: #f8f8f8; }
+
+.socials:hover, .socials:focus, a.bg-dark:hover, a.bg-dark:focus { color: #d8c9cc; }
+
+#lower-footer { font-size: small; }
+
+#community-programs { margin: 10px 0 0 0; }
 
 /*# sourceMappingURL=main.css.map */
