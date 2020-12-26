@@ -125,29 +125,10 @@
                     <hr class="dark">
                     <!-- <p class="text-muted">EduVisa is a global, student-run non-profit that aims to help students in their college and high school journey by providing a fun, interactive community of highschool and college students to help them make the most out of their high school and college experience and achieve new heights both in and out of the classroom.</p> -->
                     <p class="text-muted">
-                        We regularly sponsor webinars hosted by community members and outside experts alike!
-                        They range from casual coffee chats to informational seminars,
-                        covering all aspects of high school and college. Our current webinar series focuses on the college admissions process.
+                        Above all, EduVisa is a lively online community of students, sharing our journeys through high school and college. Our members come from all around the globe (over 80 countries!) and all walks of life. Beyond our community, EduVisa is also an academic support network, providing services like one-on-one tutoring and mentorship for our community members, free of charge.
                     </p>
                 </div>
             </div>
-            <!-- <div class="col-sm-4 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-edit wow bounceIn text-red" data-wow-delay=".1s"></i>
-                    <h3>Tutoring</h3>
-                    <p class="text-muted">
-                        Our expert instructors provide one-on-one tutoring for all subjects and standardized tests
-                        for members of our community, <em>totally free of charge</em>.
-                        Our tutors, top scorers in their respective fields, are motivated and willing to help you get your dream scores!​</p>
-                        Above all, EduVisa is a lively online community of students, sharing our journeys through high
-                        school and college.
-                        Our members come from all around the globe (over 80 countries!) and all walks of life.
-                        Beyond our community, EduVisa is also an academic support network, providing services like
-                        one-on-one tutoring and mentorship
-                        for our community members, free of charge.
-                    </p>
-                </div>
-            </div> -->
         </div>
     </section>
 
@@ -356,20 +337,20 @@
 <script src="/js/creative.js"></script>
 
 
-<script>
-    // check if browser understand object-fit style - affect css styles
-    if (window.getComputedStyle(document.body).objectFit !== undefined) {
-        $("body").addClass("object-fit-compatible");
-    // check if browser understand background-size style - affect css styles
-    } else if (window.getComputedStyle(document.body).backgroundSize !== undefined) {
-        $("body").addClass("background-size-compatible");
-        $('img').each(function() {
-            $(this).css({
-                'background-image': 'url(\'' + $(this).attr('src') + '\')'
+    <script>
+        // check if browser understand object-fit style - affect css styles
+        if (window.getComputedStyle(document.body).objectFit !== undefined) {
+            $("body").addClass("object-fit-compatible");
+            // check if browser understand background-size style - affect css styles
+        } else if (window.getComputedStyle(document.body).backgroundSize !== undefined) {
+            $("body").addClass("background-size-compatible");
+            $('img').each(function () {
+                $(this).css({
+                    'background-image': 'url(\'' + $(this).attr('src') + '\')'
+                });
             });
         }
     </script>
-
 
 </body>
 
