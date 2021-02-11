@@ -7,27 +7,39 @@
     {% include nav.html %}
 
     <!-- Header -->
-    <header>
-        <section class="bg-light" id="header">
-            <div class="container">
-                <!-- <div class="row"> -->
-                <div class="wrapper">
-                    <div class="wrapper-image right">
-                        <img src="/img/AdobeStock_front_25.jpeg" />
-                    </div>
-                    <div class="wrapper-text header-content">
-                        <h1 class="section-heading">Welcome to the<br>EduVisa Community!</h1><br>
-                        <p class="text-muted">We're a global community of students, by students, for students, in a time
-                            when we're as disconnected as ever. </p>
-                        <a href="https://discord.gg/ZnMKDKQ" target="_blank" class="btn btn-primary btn-xl page-scroll">
-                            <i class="fab fa-discord fa-fw"></i>&nbsp Join Us On Discord!
-                        </a>
-                    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 class="section-heading">Welcome to the <br>EduVisa Community!</h1></br>
+            <p>We're a global community of students, by students, for students, in a time when we're as disconnected as ever. </p>
+            <a href="https://discord.gg/ZnMKDKQ" target="_blank" class="btn btn-primary btn-xl page-scroll">
+                <i class="fab fa-discord fa-fw"></i>&nbsp Join Us On Discord!
+            </a>
+        </div>
+    </div>
+    
+
+
+    <!--header>
+    <section class="bg-light" id="header">
+        <div class="container">
+            <div class="row">
+            <div class="wrapper">
+                <div class="wrapper-image right">
+                    <img src="/img/AdobeStock_front_25.jpeg" />
                 </div>
-                <!-- </div> -->
+                <div class="wrapper-text header-content">
+                    <h1 class="section-heading">Welcome to the<br>EduVisa Community!</h1><br>
+                    <p class="text-muted">We're a global community of students, by students, for students, in a time
+                        when we're as disconnected as ever. </p>
+                    <a href="https://discord.gg/ZnMKDKQ" target="_blank" class="btn btn-primary btn-xl page-scroll">
+                        <i class="fab fa-discord fa-fw"></i>&nbsp Join Us On Discord!
+                    </a>
+                </div>
             </div>
-        </section>
-    </header>
+            </div>
+        </div>
+    </section>
+    </header-->
 
     <!-- Who We Are -->
     <section class="bg-gray" id="who-we-are">
@@ -108,6 +120,28 @@
 
 
   <style>
+      body, html {
+    height: 100%;
+    }
+
+    .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("https://cdn.discordapp.com/attachments/707289650410291230/798078993982947368/By_Students_For_Students._4.png");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+
+    .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-right: 50px;
+    }
     .right {
     float: right !important;
     }
@@ -184,7 +218,7 @@
                         go directly to helping us reach more students and maintain our worldwide community.
                     </p>
                     <a href="https://donate.myeduvisa.org" target="_blank" class="btn btn-primary btn-xl">
-                        <i class="fab fa-paypal fa-fw"></i>&nbsp Consider Donating!
+                        <i class="fab fa-paypal fa-fw"></i>&nbsp Donate Now!
                     </a>
                 </div>
             </div>
