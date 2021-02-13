@@ -141,7 +141,7 @@ aside {
             padding: 10px 0px;
             &:hover,
             &:focus {
-                color: white;
+                color: black;
             }
         }
         // padding: 0% 8%;
@@ -230,6 +230,52 @@ header {
     }
 }
 
+// Homepage Hero (Updated Header)
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("https://cdn.discordapp.com/attachments/707289650410291230/798078993982947368/By_Students_For_Students._4.png");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-right: 50px;
+}
+
+@media (max-width: 319px){
+    .hero-text{
+        left:80%;
+    }
+}
+
+@media (max-width: 571px) {
+    .hero-text{
+        left: 45%;
+        padding-right: 1px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media (min-height: 1024px) {
+    .hero-text {
+        padding-right: 0px;
+        h1 {
+            font-size: 125px;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
 
 .right {
     float: right !important;
