@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+
+    {% include nav.html %}
+
+    <!-- Header -->
+    <section class="bg-primary">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="page-heading">Get Involved!</h1>
+                <!-- <hr class="light"> -->
+                <!-- <hr style="visibility:hidden;"> -->
+                <h3 class="text-faded">Our community relies on the hard work of hundreds of volunteers. Join our team!
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutoring -->
+    <section class="bg-gray" id="tutoring">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="wrapper-image">
+                        <img src="/img/AdobeStock_Tutor_15.jpeg" />
+                    </div>
+                    <div class="wrapper-text">
+                        <h2 class="section-heading">Tutoring</h2>
+                        <p class="text-muted">We offer dedicated one-on-one tutoring to our community members for the
+                            SAT, ACT, AP, and IB subjects, <b><i>totally free of charge!</i></b> To do so, we rely on
+                            the work of over 100 volunteer tutors. In turn, we work hard to reward the dedication of our
+                            tutoring staff through curated resources, volunteer hours, social events, and a path to join
+                            our leadership team.</p>
+                        <p class="text-muted">If you've excelled at the SAT, ACT, or any of your school subjects, and
+                            you'd like to help us continue supporting thousands of high school students through
+                            one-on-one tutoring, then we'd love to have you on our team.</p>
+                        <a href="/get-involved/tutoring" class="btn btn-primary btn-xl">Join Our Tutoring Team!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship -->
+    <section class="bg-light" id="mentorship">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="wrapper-image right">
+                        <img src="/img/AdobeStock_Mentor_15.jpeg" />
+                    </div>
+                    <div class="wrapper-text">
+                        <h2 class="section-heading">Mentorship</h2>
+                        <p class="text-muted">We know first-hand that high school and college applications can be
+                            daunting to navigate! That's why we offer mentorship for high school underclassmen in our
+                            community and seniors applying to college. </p>
+                        <p class="text-muted">If you're a junior or senior in high school wanting to share the in's and
+                            out's of high school life and academics, or if you're a college student eager to share their
+                            college journey, we'd love to have you on our mentorship team!</p>
+                        <a href="/get-involved/mentorship" class="btn btn-primary btn-xl page-scroll">Join Our
+                            Mentorship Team!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Specializations -->
+    <section class="bg-gray" id="specializations">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="wrapper-image">
+                        <img src="/img/AdobeStock_Team_15.jpeg" />
+                    </div>
+                    <div class="wrapper-text">
+                        <h2 class="section-heading">Other Ways to Get Involved!</h2>
+                        <!-- <hr class="light"> -->
+                        <p class="text-muted">Not interested in the above opportunites? No problem&mdash;we
+                            have dozens of other ways in which you can help support our community,
+                            and we're always looking for extra hands.
+                        </p>
+                        <p class="text-muted">Whether you love crafting eye-popping graphic design,
+                            capturing audiences on social media, writing informative and captivaing articles,
+                            tinkering with technology, or something else, we've got a spot for you on our team!
+                            Check out our other roles below!
+                        </p>
+                        <a href="/get-involved/other-positions" class="btn btn-primary btn-xl page-scroll">Explore Our
+                            Other Positions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include scripts.html %}
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+        // check if browser understand object-fit style - affect css styles
+        if (window.getComputedStyle(document.body).objectFit !== undefined) {
+            $("body").addClass("object-fit-compatible");
+            // check if browser understand background-size style - affect css styles
+        } else if (window.getComputedStyle(document.body).backgroundSize !== undefined) {
+            $("body").addClass("background-size-compatible");
+            $('img').each(function () {
+                $(this).css({
+                    'background-image': 'url(\'' + $(this).attr('src') + '\')'
+                });
+            });
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
