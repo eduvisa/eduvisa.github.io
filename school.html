@@ -1,0 +1,94 @@
+---
+permalink: /resources/school
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<style>
+    .list-group-item{
+        font-size: 2rem;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .list-group-item:hover{
+        filter: brightness(90%);
+    }
+    .btn{
+        font-size: 2rem;
+    }
+    .list-group{
+        
+        margin: 20px 5%;
+        width: 90%;
+    }
+</style>
+<body id="page-top">
+    {% include nav.html %}
+    <section class="bg-primary">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="page-heading" style="font-size: 6rem;">School Resources</h1>
+                <!-- <hr class="light"> -->
+                <!-- <hr style="visibility:hidden;"> -->
+                <h3 class="text-faded">Explore the resources for school subjects
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray">
+    <h2 class="text-center" style="font-size: 4rem; padding: 5px;">Proffessors that carried us through school!</h2>
+    <div class="list-group">
+        <a target="_blank"href="https://www.youtube.com/c/NancyPi" class="list-group-item list-group-item-action">
+        NancyPi
+        </a>
+
+        <a target="_blank"href="https://www.youtube.com/c/TheOrganicChemistryTutor" class="list-group-item list-group-item-action">Organic Chemistry Tutor</a>
+
+        <a target="_blank" href="https://www.youtube.com/c/Integralcalc" class="list-group-item list-group-item-action">KristaKing</a>
+
+        <a target="_blank" href="https://www.youtube.com/c/ProfessorLeonard" class="list-group-item list-group-item-action">Professor Leonard</a>
+
+        <a target="_blank" href="https://www.youtube.com/c/DrTreforBazett" class="list-group-item list-group-item-action">Dr. Trefor Bazett</a>
+
+        <a target="_blank" href="https://www.youtube.com/c/3blue1brown" class="list-group-item list-group-item-action">Grant Sanderson</a>
+
+        </div></section>
+
+    <section class="bg-light">
+        <h2 class="text-center" style="font-size: 4rem;">Other Resources</h2>
+        <div class="list-group">
+        <a target="_blank" href="https://drive.google.com/drive/folders/1dLBvaFBGeecoeNJdZgwtIFuF9ZL6FpVg?usp=sharing" class="list-group-item list-group-item-action">Physics</a>
+
+        <a target="_blank" href="https://mega.nz/folder/2h5lXCDb#WMm2U5ioQxPsoES_rNBEwg" class="list-group-item list-group-item-action">Linguistics</a>
+
+        <a target="_blank" href="https://docs.google.com/presentation/d/1rYHUCcUZsD6kKdVI4dSkewV7TIH2Aj49RDKiLyHX7vQ/edit?usp=sharing" class="list-group-item list-group-item-action">General Subject Mock Questions</a>
+    
+            </div>
+    
+    </section>
+        
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+{% include scripts.html %}
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+    // check if browser understand object-fit style - affect css styles
+    if (window.getComputedStyle(document.body).objectFit !== undefined) {
+        $("body").addClass("object-fit-compatible");
+        // check if browser understand background-size style - affect css styles
+    } else if (window.getComputedStyle(document.body).backgroundSize !== undefined) {
+        $("body").addClass("background-size-compatible");
+        $('img').each(function () {
+            $(this).css({
+                'background-image': 'url(\'' + $(this).attr('src') + '\')'
+            });
+        });
+    }
+</script>
+</body> 
+</html>

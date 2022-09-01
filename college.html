@@ -1,0 +1,94 @@
+---
+permalink: /resources/college
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<style>
+    .list-group-item{
+        font-size: 2rem;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .list-group-item:hover{
+        filter: brightness(90%);
+    }
+    .btn{
+        font-size: 2rem;
+    }
+    .list-group{
+        
+        margin: 20px 5%;
+        width: 90%;
+    }
+</style>
+<body id="page-top">
+    {% include nav.html %}
+    <section class="bg-primary">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="page-heading" style="font-size: 6rem;">College Application Resources</h1>
+                <!-- <hr class="light"> -->
+                <!-- <hr style="visibility:hidden;"> -->
+                <h3 class="text-faded">Explore the College application resources created by our community!
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray">
+    <div class="list-group">
+        
+        <a target="_blank" href="https://drive.google.com/file/d/1xqwdsZDSvjkVuTUZus1T6WqC3XkIpKq8/view" class="list-group-item list-group-item-action active">A Comprehensive Guide to College Admissions</a>
+
+        <a target="_blank"href="https://docs.google.com/presentation/d/1sJrESYqG7w_xfZpneE0KznDpXMirur2yZ5c_UIW4cBE/edit?usp=sharing" class="list-group-item list-group-item-action">College Oppurtinity Finding</a>
+
+        <a target="_blank" href="https://docs.google.com/presentation/d/10NKma8flDUQRSzF1VQZLjWkq3BTD69lxppkZ7U03zu8/edit?usp=sharing" class="list-group-item list-group-item-action">How I got into Harvard, and why applying to college sucks - Richard Qiu</a>
+
+        <a target="_blank" href="https://docs.google.com/presentation/d/1hHsi777riHLpIub9JWiTgfO7WEemfzXyPkvD8acdocQ/edit?usp=sharing" class="list-group-item list-group-item-action">How I got into Cornell - Jinny Gui</a>
+
+        <a target="_blank" href="https://docs.google.com/presentation/d/1C4ypunQsnhMVMScaZc1xhYk4e3J6HeXSSkbAdMi4BTo/edit?usp=sharing" class="list-group-item list-group-item-action">How I got into Yale - Evan Hu</a>
+
+        <a target="_blank"href="https://cdn.discordapp.com/attachments/746663636738506762/876143622016335952/EduVisa_College_Admission_Series_Introduction_Event_-_August_14th.pdf" class="list-group-item list-group-item-action">
+            Eduvisa College Admission Series
+            </a>
+
+        <a target="_blank" href="https://docs.google.com/presentation/d/1hHsi777riHLpIub9JWiTgfO7WEemfzXyPkvD8acdocQ/edit?usp=sharing" class="list-group-item list-group-item-action">EduVisa's AMA(Ask me anything) by Richard Qiu about getting into Harvard</a>
+
+        <a target="_blank" href="https://docs.google.com/presentation/d/1hHsi777riHLpIub9JWiTgfO7WEemfzXyPkvD8acdocQ/edit?usp=sharing" class="list-group-item list-group-item-action">EduVisa's AMA(Ask me anything) by Jessica Wang about getting into Brown</a>
+
+        <a target="_blank" href="https://www.youtube.com/watch?v=BuLX2ToTwL0" class="list-group-item list-group-item-action">Common Mistakes while Writing College Essays</a>
+
+        <a target="_blank" href="https://youtu.be/y98EC4swonQ" class="list-group-item list-group-item-action">Insightful Breakdown of the CommonApp Prompts</a>
+
+        <a target="_blank" href="https://drive.google.com/file/d/1xqwdsZDSvjkVuTUZus1T6WqC3XkIpKq8/view" class="list-group-item list-group-item-action">A Comprehensive Guide to College Admissions</a>
+        </div>
+    
+    
+    
+    </section>
+        
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+{% include scripts.html %}
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+    // check if browser understand object-fit style - affect css styles
+    if (window.getComputedStyle(document.body).objectFit !== undefined) {
+        $("body").addClass("object-fit-compatible");
+        // check if browser understand background-size style - affect css styles
+    } else if (window.getComputedStyle(document.body).backgroundSize !== undefined) {
+        $("body").addClass("background-size-compatible");
+        $('img').each(function () {
+            $(this).css({
+                'background-image': 'url(\'' + $(this).attr('src') + '\')'
+            });
+        });
+    }
+</script>
+</body> 
+</html>
